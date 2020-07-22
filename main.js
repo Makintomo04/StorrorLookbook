@@ -6,12 +6,11 @@ const nav = document.querySelector(".nav-links");
 
 galleryImgs.forEach((img) => {
   img.addEventListener("click", () => {
+    const fullImgSrc = img.getAttribute("data-image");
+    fullImg.src = `./img/${fullImgSrc}`;
     modal.classList.add("open");
     fullImg.getAttribute("src");
     fullImg.classList.add("open");
-
-    const fullImgSrc = img.getAttribute("data-image");
-    fullImg.src = `./img/${fullImgSrc}`;
   });
 });
 
